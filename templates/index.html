@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialogue Management Systems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .system-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .system-card:hover {
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose a Dialogue System</h1>
+    
+    <div class="system-card" onclick="window.location.href='/chat/data_analysis'">
+        <h2>Data Analysis Assistant</h2>
+        <p>Ask questions about your dataset and get analysis done</p>
+    </div>
+    
+    <div class="system-card" onclick="window.location.href='/chat/restaurant'">
+        <h2>Restaurant Recommendation System</h2>
+        <p>Find the perfect restaurant in Bangalore based on your preferences</p>
+    </div>
+    
+    <div class="system-card" onclick="window.location.href='/chat/insurance'">
+        <h2>Insurance Assistant</h2>
+        <p>Get answers about insurance policies and documentation.</p>
+    </div>
+</body>
+</html> 
