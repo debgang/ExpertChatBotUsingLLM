@@ -22,3 +22,7 @@ Flask based chatbot developed for all LLM flows
 - Finally the result of reranker is passed on to LLM to generate the final response of the query
 
 
+## Setup instructions 
+- Setup pyton environment. have used python3 for development
+- From the wokspace folder run pip install -e .
+- Once all the requirements are installed run start-flask-app to start the server.
