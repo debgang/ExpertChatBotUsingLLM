@@ -5,8 +5,6 @@ import openai
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 # Set the display width to control the output width
 pd.set_option('display.width', 100)
-# Read the dataset and read the Laptop Dataset
-df = pd.read_csv('laptop_data.csv')
 deployment = os.environ.get("AZURE_DEPLOYMENT_NAME")
 api_version = os.environ.get("AZURE_API_VERSION")
 from langchain_openai import AzureChatOpenAI
@@ -286,7 +284,7 @@ def dictionary_present(response):
     return confirmation
 
 def data_preparation_Layer(user_req_string):
-    df = pd.read_csv("restaurants.csv")
+    df = pd.read_csv("csv/restaurants.csv")
     df['Average cost for 2'] = df['Average cost for 2'].str.replace(',', '').astype(float)
     df['Rating'] = df['Rating'].str.replace('-', 'NaN')
     df = df[~df['Rating'].isna()]

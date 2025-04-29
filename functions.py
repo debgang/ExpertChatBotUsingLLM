@@ -6,7 +6,7 @@ from tenacity import retry, wait_random_exponential, stop_after_attempt
 # Set the display width to control the output width
 pd.set_option('display.width', 100)
 # Read the dataset and read the Laptop Dataset
-df = pd.read_csv('laptop_data.csv')
+df = pd.read_csv('csv/laptop_data.csv')
 
 from langchain_openai import AzureChatOpenAI
 
@@ -329,7 +329,7 @@ def product_map_layer(laptop_description):
 
 
 def compare_laptops_with_user(user_req_string):
-    laptop_df= pd.read_csv('laptop_data.csv')
+    laptop_df= pd.read_csv('csv/laptop_data.csv')
 
 ## Create a new column "laptop_feature" that contains the dictionary of the product features
     laptop_df['laptop_feature'] = laptop_df['Description'].apply(lambda x: product_map_layer(x))
