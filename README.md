@@ -26,3 +26,6 @@ Flask based chatbot developed for all LLM flows
 - Setup pyton environment. have used python3 for development
 - From the wokspace folder run pip install -e .
 - Once all the requirements are installed run start-flask-app to start the server.
+
+Author : Debargha Ganguly
+email : debargha.ganuly@gail.com
