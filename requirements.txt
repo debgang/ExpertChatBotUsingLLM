@@ -1,0 +1,11 @@
+chromadb
+pandas
+sentence-transformers
+numpy
+langchain
+openai
+flask
+sentence_transformers
+fuzzywuzzy
+langchain_openai
+langchain_experimental
